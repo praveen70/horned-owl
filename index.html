@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <style>
+        /* #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+        
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        } */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="./index.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+
+</head>
+
+<body onload="loadTextfile()">
+
+    <div class="container">
+        <div id="order" class="ui label" style="margin-top:20px ">
+        </div>
+        <div id="total-amount" class="ui label" style="margin-top:20px ">
+        </div>
+
+
+        <table class="ui celled striped table" id="customers" style="margin-top:20px;">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        Customer Ordered Once
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Names</th>
+                <th>Amount</th>
+            </tr>
+            <tr class="positive">
+                <td class="collapsing" id="td-names"></td>
+                <td id="td-amount" class="collapsing"></td>
+
+            </tr>
+
+        </table>
+
+        <div style="height: 50%; width: 100%;">
+            <canvas id="mychart"></canvas>
+        </div>
+        <table class="ui celled striped table" id="customers" style="margin-top:20px;">
+            <thead>
+                <tr class="positive">
+                    <th colspan="3">
+                        Customer Ordered Twice
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Names</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td class="collapsing" id="td-names-second"></td>
+                <td class="collapsing" id="td-amount-second"></td>
+            </tr>
+
+        </table>
+
+        <div style="height: 50%; width: 100%;">
+            <canvas id="mychartSecond"></canvas>
+        </div>
+        <table class="ui celled striped table" id="customers" style="margin-top:20px;">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        Customer Ordered Thrice
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Names</th>
+                <th>Amount</th>
+            </tr>
+            <tr class="positive">
+                <td class="collapsing" id="td-names-third"></td>
+                <td class="collapsing" id="td-amount-third"></td>
+            </tr>
+
+        </table>
+
+        <div style="height: 50%; width: 100%;">
+            <canvas id="mychartThird"></canvas>
+        </div>
+
+        <table class="ui celled striped table" id="customers" style="margin-top:20px;">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        Customer Ordered Fourth
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Names</th>
+                <th>Amount</th>
+            </tr>
+            <tr class="positive">
+                <td class="collapsing" id="td-names-fourth"></td>
+                <td class="collapsing" id="td-amount-fourth"></td>
+            </tr>
+
+        </table>
+
+        <div style="height: 50%; width: 100%;">
+            <canvas id="mychartFourth"></canvas>
+        </div>
+        <table class="ui celled striped table" id="customers" style="margin-top:20px;">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        Customer Ordered Fifth
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Names</th>
+                <th>Amount</th>
+            </tr>
+            <tr class="positive">
+                <td class="collapsing" id="td-names-fifth"></td>
+                <td class="collapsing" id="td-amount-fifth"></td>
+            </tr>
+
+        </table>
+
+        <div style="height: 50%; width: 100%;">
+            <canvas id="mychartFifth"></canvas>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
